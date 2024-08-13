@@ -36,15 +36,15 @@ function App() {
                     </p>
                 </div>
             </section>
-                <div className ="how-it-works-text">
-                    <p><h2>How it works</h2></p>
-                    <hr className="solid"/>
-                </div>
-                <HeroText
-                    imgSrc = "/how-it-works-1.png"
-                    content = "Call us and book in a 'Design Consultation' on a date and time to suit you."
-                    title = "Give us a call ..."
-                />
+            <div className ="how-it-works-text">
+                <p><h2>How it works</h2></p>
+                <hr className="solid"/>
+            </div>
+            <HeroText
+                imgSrc = "/how-it-works-1.png"
+                title = "Give us a call ..."
+                content = "Call us and book in a 'Design Consultation' on a date and time to suit you."
+            />
             <section className = "heroText">
                 <img className = "other-heroes" src = "/how-it-works-2.png"/>
                 <p><h3>We come to you ...</h3></p>
