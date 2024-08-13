@@ -1,7 +1,6 @@
 body {
   font-family: "Aleo", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -25,6 +24,7 @@ body {
 
 .discoverTextContainter {
   background: #f0911b;
+  color: black;
   padding: 5px 30px;
 }
 
