@@ -14,7 +14,7 @@ function App() {
       <main>
         <div className ="hero">
             <section className = "discoverHero" >
-                <img className="hero1" src="assets/hero-desktop.png" alt="fireplace"/>
+                <img className="hero1" src="hero-desktop.png" alt="fireplace"/>
                 <div className = "discoverTextContainter"> 
                     <p>
                      <h2>Discover the Perfect Fireplace</h2>
@@ -29,19 +29,19 @@ function App() {
                     <hr className="solid"/>
                 </div>
             <section className = "heroText">
-                <img className = "other-heroes" src = "/assets/how-it-works-1.png"/>
+                <img className = "other-heroes" src = "/how-it-works-1.png"/>
                 <p><h3>Give us a call ...</h3></p>
                 <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
                 <hr className="solid"/>
             </section>
             <section className = "heroText">
-                <img className = "other-heroes" src = "/assets/how-it-works-2.png"/>
+                <img className = "other-heroes" src = "/how-it-works-2.png"/>
                 <p><h3>We come to you ...</h3></p>
                 <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
                 <hr className="solid"/>
             </section>
             <section className = "heroText">
-                <img className = "other-heroes" src = "/assets/how-it-works-3.png"/>
+                <img className = "other-heroes" src = "/how-it-works-3.png"/>
                 <p><h3>We recommend ...</h3></p>
                 <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
             </section>
