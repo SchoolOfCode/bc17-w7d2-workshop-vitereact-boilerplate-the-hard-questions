@@ -4,32 +4,77 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+<body>
+    <div className = "pageWrapper">
+     <header>
+        <h1>🔥Fireplace Palace</h1>
+     </header>
+      <main>
+        <div className ="hero">
+            <section className = "discoverHero" >
+                <img className="hero1" src="assets/hero-desktop.png" alt="fireplace"/>
+                <div className = "discoverTextContainter"> 
+                    <p>
+                     <h2>Discover the Perfect Fireplace</h2>
+                    </p>
+                    <p> 
+                      <h3>Book consultation: <span className = "white-text">0121 345 6789</span></h3>
+                    </p>
+                </div>
+            </section>
+                <div className ="how-it-works-text">
+                    <p><h2>How it works</h2></p>
+                    <hr className="solid"/>
+                </div>
+            <section className = "heroText">
+                <img className = "other-heroes" src = "/assets/how-it-works-1.png"/>
+                <p><h3>Give us a call ...</h3></p>
+                <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
+                <hr className="solid"/>
+            </section>
+            <section className = "heroText">
+                <img className = "other-heroes" src = "/assets/how-it-works-2.png"/>
+                <p><h3>We come to you ...</h3></p>
+                <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
+                <hr className="solid"/>
+            </section>
+            <section className = "heroText">
+                <img className = "other-heroes" src = "/assets/how-it-works-3.png"/>
+                <p><h3>We recommend ...</h3></p>
+                <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
+            </section>
+        </div>    
+        </main>
+      <footer>
+        <section className = "footer-info">
+            <div>
+                <p>Find us on:</p>
+            </div>
+            <ul>
+                <li>
+                    Facebook
+                </li>
+                <li>
+                    Instagram
+                </li>
+                <li>
+                    Tiktok
+                </li>
+            </ul>
+            <div>
+                <p>©️ Fireplace Palace</p>
+            </div>
+            <div>
+                <p>Info@fireplace.co.uk</p>
+            </div>
+        </section>    
+      </footer>
+     </div>
+         </body>
     </>
-  )
+  );
 }
 
 export default App
