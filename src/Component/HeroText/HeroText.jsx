@@ -1,3 +1,5 @@
+import './HeroText.css'
+
 export default function HeroText( props ) {
   return(
   <>
