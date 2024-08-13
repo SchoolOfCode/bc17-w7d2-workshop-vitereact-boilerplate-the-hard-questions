@@ -3,6 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+function HeroText( props ) {
+    return(
+    <>
+        <section className = "heroText">
+            <img className = "other-heroes" src = { props.imgSrc }/>
+            <p><h3>{ props.title }</h3></p>
+            <p className = "heroContent">{ props.content }</p>
+        </section>
+    </>
+    )
+}
+
 function App() {
   return (
     <>
@@ -28,12 +40,11 @@ function App() {
                     <p><h2>How it works</h2></p>
                     <hr className="solid"/>
                 </div>
-            <section className = "heroText">
-                <img className = "other-heroes" src = "/how-it-works-1.png"/>
-                <p><h3>Give us a call ...</h3></p>
-                <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
-                <hr className="solid"/>
-            </section>
+                <HeroText
+                    imgSrc = "/how-it-works-1.png"
+                    content = "Call us and book in a 'Design Consultation' on a date and time to suit you."
+                    title = "Give us a call ..."
+                />
             <section className = "heroText">
                 <img className = "other-heroes" src = "/how-it-works-2.png"/>
                 <p><h3>We come to you ...</h3></p>
