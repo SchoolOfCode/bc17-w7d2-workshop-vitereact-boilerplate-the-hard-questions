@@ -2,18 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-function HeroText( props ) {
-    return(
-    <>
-        <section className = "heroText">
-            <img className = "other-heroes" src = { props.imgSrc }/>
-            <p><h3>{ props.title }</h3></p>
-            <p className = "heroContent">{ props.content }</p>
-        </section>
-    </>
-    )
-}
+import HeroText from './Component/HeroText/HeroText.jsx'
 
 function App() {
   return (
@@ -43,7 +32,7 @@ function App() {
             <HeroText
                 imgSrc = "/how-it-works-1.png"
                 title = "Give us a call ..."
-                content = "Call us and book in a 'Design Consultation' on a date and time to suit you."
+                content = 'Call us and book in a "Design Consultation" on a date and time to suit you.'
             />
             <section className = "heroText">
                 <img className = "other-heroes" src = "/how-it-works-2.png"/>
