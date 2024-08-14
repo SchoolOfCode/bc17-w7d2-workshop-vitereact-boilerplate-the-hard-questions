@@ -3,15 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import HeroText from './Component/HeroText/HeroText.jsx'
+import Header from './Component/Header/Header.jsx'
 
 function App() {
   return (
     <>
 <body>
     <div className = "pageWrapper">
-     <header>
-        <h1>🔥Fireplace Palace</h1>
-     </header>
+     <Header title = "Happy Fireplace Palace"/>
       <main>
         <div className ="hero">
             <section className = "discoverHero" >
@@ -34,17 +33,18 @@ function App() {
                 title = "Give us a call ..."
                 content = 'Call us and book in a "Design Consultation" on a date and time to suit you.'
             />
-            <section className = "heroText">
-                <img className = "other-heroes" src = "/how-it-works-2.png"/>
-                <p><h3>We come to you ...</h3></p>
-                <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
-                <hr className="solid"/>
-            </section>
-            <section className = "heroText">
-                <img className = "other-heroes" src = "/how-it-works-3.png"/>
-                <p><h3>We recommend ...</h3></p>
-                <p className = "heroContent">Call us and book in a "Design Consultation" on a date and time to suit you.</p>
-            </section>
+            <hr/>
+            <HeroText
+                imgSrc = "/how-it-works-2.png"
+                title = "We come to you ..."
+                content = 'We come to your home to do an assessment of the space and your style.'
+            />
+            <hr/>
+            <HeroText
+            imgSrc = "/how-it-works-3.png"
+            title = "We recommend..."
+            content = 'We send you a bespoke set of fireplace recommendations.'
+            />
         </div>    
         </main>
       <footer>
